@@ -1,0 +1,97 @@
+<template>
+
+<lightning-card>
+<div class="slds-text-heading_large slds-text-align_center slds-p-top_medium">
+    Inquiry Form
+</div>
+<div class="slds-text-align_center">
+<div class="slds-m-around_medium slds-p-around_medium slds-border_bottom">
+<div class="slds-grid slds-gutters">
+    <div class="slds-col">
+
+<lightning-input placeholder="Account Name" value = {accName} onchange={handleAccountNameChange}></lightning-input>
+</div>
+<div class="slds-col">
+<lightning-input placeholder="Account Industry" value = {accIndustry} onchange={handleAccountIndustryChange}></lightning-input>
+</div>
+</div>
+</div>
+<div class="slds-m-around_medium slds-p-around_medium slds-border_bottom">
+<div class="slds-grid slds-gutters">
+
+<div class="slds-col">
+
+<lightning-input placeholder="Contact Name" value = {conName} onchange={handleContactNameChange}></lightning-input>
+</div>
+<div class="slds-col">
+<lightning-input placeholder="Contact Email" value = {conEmail} onchange={handleContactEmailChange}></lightning-input>
+</div>
+</div>
+</div>
+<div class="slds-m-around_medium slds-p-around_medium slds-border_bottom">
+<div class="slds-grid slds-gutters">
+
+<div class="slds-col">
+
+<lightning-input placeholder="Contact Title" value = {conTitle} onchange={handleContactTitleChange}></lightning-input>
+</div>
+<div class="slds-col">
+<lightning-input placeholder="Contact Mobile" value = {conMobile} onchange={handleContactMobileChange}></lightning-input>
+</div>
+</div>
+</div>
+
+<lightning-input placeholder="Contact Street" value = {conStreet} onchange={handleContactStreetChange}></lightning-input>
+
+<div class="slds-m-around_medium slds-p-around_medium slds-border_bottom">
+<div class="slds-grid slds-gutters">
+    
+<div class="slds-col">
+<lightning-input placeholder="Contact City" value = {conCity} onchange={handleContactCityChange}></lightning-input>
+</div>
+<div class="slds-col">
+<lightning-input placeholder="Contact State" value = {conState} onchange={handleContactStateChange}></lightning-input>
+</div>
+</div>
+</div>
+<div class="slds-m-around_medium slds-p-around_medium slds-border_bottom">
+<div class="slds-grid slds-gutters">
+
+<div class="slds-col">
+
+<lightning-input placeholder="Contact Zip" value = {conZip} onchange={handleContactZipChange}></lightning-input>
+</div>
+<div class="slds-col">
+<lightning-input placeholder="Contact Country" value = {conCountry} onchange={handleContactCountryChange}></lightning-input>
+</div>
+</div>
+</div>
+<div class="slds-m-around_medium slds-p-around_medium slds-border_bottom">
+<div class="slds-grid slds-gutters">
+
+<div class="slds-col">
+<lightning-input placeholder="Opportunity Name" value = {oppName} readonly></lightning-input>
+</div>
+<div class="slds-col">
+<lightning-input placeholder="Opportunity Stage" value = {oppStage} onchange={handleOppStageChange}></lightning-input>
+</div>
+</div>
+</div>
+
+<lightning-input placeholder="Opportunity Close Date (YYYY/MM/DD)" value = {oppCloseDate} onchange={handleOppCloseDateChange}></lightning-input>
+
+<div class="slds-m-around_medium slds-p-around_medium slds-border_bottom">
+<div class="slds-grid slds-gutters">
+    
+<div class="slds-col">
+<lightning-button label="Submit" onclick={handleSubmit} variant="brand"></lightning-button>
+</div>
+<div class="slds-col">
+<lightning-button label="Cancel" onclick={handleCancel} variant="brand"></lightning-button>
+</div>
+</div>
+</div>
+</div>
+
+</lightning-card>
+</template>
